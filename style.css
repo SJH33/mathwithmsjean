@@ -1,0 +1,207 @@
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Landing Page Section */
+.landingPage {
+  background-color: #FFDE59; /* Yellow background */
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Container */
+.container.my-5 {
+  background-color: #FFFACD; /* Light yellow */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  font-family: 'Gentry', 'Pacifico', sans-serif;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+  color: #000; /* Change link and logo text color */
+}
+
+/* Body Padding for Navbar */
+body {
+  padding-top: 80px; /* Adjust based on navbar height */
+}
+
+/* Box Styles */
+.innerBox, .middleBox, .outerBox {
+  background-color: #FFDE59; /* Yellow background */
+}
+
+.middleBox {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.custom-box {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-box h2 {
+  margin-top: 20px;
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem; /* Header size */
+}
+
+p.lead {
+  font-size: 1.25rem; /* Paragraph size */
+}
+
+/* Button Styling */
+.btn-lg {
+  margin-top: 10px; /* Spacing between buttons */
+}
+
+.btn-custom-red {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.btn-custom-red:hover {
+  background-color: darkred;
+}
+
+.btn-outline-red {
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-red:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Full Width Background */
+.full-width-background {
+  background-color: #f9f9c5; /* Light yellow */
+  width: 100%;
+  padding: 0;
+}
+
+/* Testimonial Section */
+.testimonial-grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.testimonial-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.text-center{
+  padding-bottom: 50px;
+
+}
+
+/* Icon Container Styling */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.icon-container .icon {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Section Headers */
+h2.fw-bold {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Row and Column Layout */
+.row.p-4 {
+  background-color: #FFF;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col-lg-7, .col-lg-4 {
+  padding: 30px 0;
+}
+
+.col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section Spacing */
+#next-section {
+  height: calc(100vh - 80px); /* Full viewport height minus navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  scroll-margin-top: 80px;
+}
+.navbar-nav .nav-item .nav-link.active {
+  background-color: #FFDE59; /* Highlighted background */
+  color: black; /* Text color */
+  font-weight: bold; /* Optional: Make text bold */
+  border-radius: 10px;
+}
