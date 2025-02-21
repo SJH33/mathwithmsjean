@@ -21,12 +21,12 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
       <div class="container-fluid px-0">
         <a class="navbar-brand" href="index.html">
           <img src="logo.png" width="80" height="80" alt="Ms. Jean Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsExample04">
@@ -42,5 +42,108 @@
       </div>
     </nav>
 
-    <!-- Math Tutoring Section -->
-    <section id="math-tutoring" class="py-5 mt
+    <!-- Hero Section -->
+    <section class="hero bg-light py-5 mt-5 text-center">
+      <div class="container">
+        <h1 class="fw-bold">Math Tutoring with Ms. Jean</h1>
+        <p class="lead">
+          Helping K-8 students build confidence and excel in math through personalized, engaging tutoring.
+        </p>
+      </div>
+    </section>
+
+    <!-- What I Offer Section -->
+    <section class="services py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold">What I Offer</h2>
+            <p class="lead">Customized tutoring designed to meet each student’s unique needs.</p>
+          </div>
+        </div>
+
+        <div class="row text-center mt-4">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <div class="card-body">
+                <i class="fas fa-user-graduate fa-3x text-primary"></i>
+                <h4 class="fw-bold mt-3">One-on-One Tutoring</h4>
+                <p>Personalized sessions tailored to your child's learning style and academic goals.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <div class="card-body">
+                <i class="fas fa-chalkboard-teacher fa-3x text-primary"></i>
+                <h4 class="fw-bold mt-3">Small Group Classes</h4>
+                <p>Engaging group lessons that make learning math fun and interactive.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <div class="card-body">
+                <i class="fas fa-book fa-3x text-primary"></i>
+                <h4 class="fw-bold mt-3">Homework Help</h4>
+                <p>Support with school assignments to ensure understanding and academic success.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="#contact" class="btn btn-custom-red btn-lg px-4 fw-bold">Book a Session</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold">Get in Touch</h2>
+            <p class="lead">Have questions or want to book a tutoring session? Fill out the form below!</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="_replyto" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-custom-red btn-lg px-4">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="py-5 custom-footer" style="background-color: #FFDE59;">
+      <footer>
+        <div class="px-5 d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2025 Math with Ms. Jean. All rights reserved.</p>
+        </div>
+      </footer>  
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
+
