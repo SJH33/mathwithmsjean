@@ -2,9 +2,20 @@
 html {
   scroll-behavior: smooth;
 }
-/* Override font for navbar elements */
+
+/* Ensure the navbar uses a regular font */
 .navbar, .navbar-brand, .navbar-nav a, h1 {
   font-family: Arial, sans-serif;
+}
+
+/* Make every section fill the entire viewport height */
+section {
+  min-height: 100vh;
+  /* Center section content vertically */
+  display: flex;
+  align-items: center;
+  /* Prevent content from being hidden behind the fixed navbar */
+  scroll-margin-top: 80px;
 }
 
 /* Landing Page Section */
@@ -17,10 +28,10 @@ html {
   width: 100%;
 }
 
-/* Container */
+/* Container (for sections that use .container.my-5) */
 .container.my-5 {
   background-color: #FFFACD; /* Light yellow */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 10px;
   margin-top: 0;
 }
 
@@ -29,10 +40,9 @@ html {
   padding: 0 20px;
   z-index: 10;
 }
-
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
-  color: #000; /* Change link and logo text color */
+  color: #000;
 }
 
 /* Body Padding for Navbar */
@@ -42,14 +52,12 @@ body {
 
 /* Box Styles */
 .innerBox, .middleBox, .outerBox {
-  background-color: #FFDE59; /* Yellow background */
+  background-color: #FFDE59;
 }
-
 .middleBox {
   border: none !important;
   box-shadow: none !important;
 }
-
 .custom-box {
   border: 2px solid #ddd;
   border-radius: 12px;
@@ -57,25 +65,22 @@ body {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .custom-box h2 {
   margin-top: 20px;
 }
 
 /* Typography */
 h1 {
-  font-size: 3rem; /* Header size */
+  font-size: 3rem;
 }
-
 p.lead {
-  font-size: 1.25rem; /* Paragraph size */
+  font-size: 1.25rem;
 }
 
 /* Button Styling */
 .btn-lg {
-  margin-top: 10px; /* Spacing between buttons */
+  margin-top: 10px;
 }
-
 .btn-custom-red {
   background-color: red;
   color: white;
@@ -83,11 +88,9 @@ p.lead {
   border-radius: 25px;
   padding: 10px 20px;
 }
-
 .btn-custom-red:hover {
   background-color: darkred;
 }
-
 .btn-outline-red {
   background-color: transparent;
   color: red;
@@ -96,15 +99,14 @@ p.lead {
   padding: 10px 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .btn-outline-red:hover {
   background-color: red;
   color: white;
 }
 
-/* Full Width Background */
+/* Full Width Background Sections */
 .full-width-background {
-  background-color: #f9f9c5; /* Light yellow */
+  background-color: #f9f9c5;
   width: 100%;
   padding: 0;
 }
@@ -116,7 +118,6 @@ p.lead {
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
 }
-
 .testimonial-card {
   padding: 20px;
   border: 1px solid #ddd;
@@ -125,22 +126,20 @@ p.lead {
   text-align: center;
   background-color: #fff;
 }
-
 @media (max-width: 768px) {
   .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 480px) {
   .testimonial-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.text-center{
+/* General Section Spacing */
+.text-center {
   padding-bottom: 50px;
-
 }
 
 /* Icon Container Styling */
@@ -154,7 +153,6 @@ p.lead {
   border-radius: 50%;
   margin-bottom: 5px;
 }
-
 .icon-container .icon {
   font-size: 24px;
   color: #333;
@@ -169,23 +167,15 @@ h2.fw-bold {
   color: #333;
 }
 
-/* Row and Column Layout */
-.row.p-4 {
-  background-color: #FFF;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
+/* Row and Column Layout Overrides */
 .row {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .col-lg-7, .col-lg-4 {
   padding: 30px 0;
 }
-
 .col-lg-4 {
   display: flex;
   flex-direction: column;
@@ -193,18 +183,10 @@ h2.fw-bold {
   align-items: center;
 }
 
-/* Section Spacing */
-#why_jean {
-  height: calc(100vh - 80px); /* Full viewport height minus navbar */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  scroll-margin-top: 80px;
-}
+/* Highlight active navbar link */
 .navbar-nav .nav-item .nav-link.active {
-  background-color: #FFDE59; /* Highlighted background */
-  color: black; /* Text color */
-  font-weight: bold; /* Optional: Make text bold */
+  background-color: #FFDE59;
+  color: black;
+  font-weight: bold;
   border-radius: 10px;
 }
