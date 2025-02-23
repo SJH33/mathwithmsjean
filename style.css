@@ -190,7 +190,7 @@ h2.fw-bold {
 }
 
 /* Section Spacing */
-#next-section {
+#why_jean {
   height: calc(100vh - 80px); /* Full viewport height minus navbar */
   display: flex;
   justify-content: center;
