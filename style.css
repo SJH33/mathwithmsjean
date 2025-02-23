@@ -2,6 +2,10 @@
 html {
   scroll-behavior: smooth;
 }
+/* Override font for navbar elements */
+.navbar, .navbar-brand, .navbar-nav a, h1 {
+  font-family: Arial, sans-serif;
+}
 
 /* Landing Page Section */
 .landingPage {
