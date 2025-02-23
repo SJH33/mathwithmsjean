@@ -22,7 +22,6 @@ html {
 
 /* Navbar Styling */
 .navbar {
-  font-family:  sans-serif;
   padding: 0 20px;
   z-index: 10;
 }
