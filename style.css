@@ -22,7 +22,7 @@ html {
 
 /* Navbar Styling */
 .navbar {
-  font-family: 'Gentry', 'Pacifico', sans-serif;
+  font-family: 'Pacifico', sans-serif;
   padding: 0 20px;
   z-index: 10;
 }
