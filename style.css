@@ -193,3 +193,14 @@ h2.fw-bold {
   font-weight: bold;
   border-radius: 10px;
 }
+
+/* FAQs Section Custom Styles */
+#faqs .accordion-button i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the chevron when the accordion is expanded */
+#faqs .accordion-button:not(.collapsed) i {
+  transform: rotate(180deg);
+}
