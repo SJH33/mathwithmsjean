@@ -212,3 +212,42 @@ h2.fw-bold {
 .instagram-float img:hover {
   transform: scale(1.1);
 }
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.bottom-nav a {
+  text-align: center;
+  color: #FF6F61;
+  font-size: 0.75rem;
+  text-decoration: none;
+  flex: 1;
+}
+
+.bottom-nav a i {
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.bottom-nav a:hover {
+  background-color: #fff1f0;
+}
+
+/* Hide top navbar on mobile */
+@media (max-width: 767.98px) {
+  .navbar {
+    display: none;
+  }
+}
