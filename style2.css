@@ -203,7 +203,7 @@ p.lead {
 
 .instagram-float {
   position: fixed;
-  bottom: 80px;
+  bottom: 100px;
   right: 20px;
   z-index: 999;
 }
