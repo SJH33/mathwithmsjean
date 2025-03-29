@@ -5,10 +5,17 @@ html {
 
 body {
   padding-top: 80px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: font-family: 'Quicksand', sans-serif;
   background: linear-gradient(to bottom, #fdf6e3, #fefaf6);
   color: #333;
 }
+
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'DM Serif Display', serif;
+}
+
+
 
 .navbar, .navbar-brand, .navbar-nav a, h1 {
   font-family: 'Playfair Display', serif;
