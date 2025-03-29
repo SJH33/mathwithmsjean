@@ -5,20 +5,20 @@ html {
 
 body {
   padding-top: 80px;
-  font-family: font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background: linear-gradient(to bottom, #fdf6e3, #fefaf6);
   color: #333;
 }
-
 
 h1, h2, h3, .navbar-brand {
   font-family: 'DM Serif Display', serif;
 }
 
-
-
-.navbar, .navbar-brand, .navbar-nav a, h1 {
-  font-family: 'Playfair Display', serif;
+/* Watercolor feel */
+.landingPage {
+  background: url('images/watercolor-bg.jpg') no-repeat center center / cover;
+  color: #2d2d2d;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .section {
@@ -29,13 +29,6 @@ h1, h2, h3, .navbar-brand {
   position: relative;
 }
 
-/* Watercolor feel */
-.landingPage {
-  background: url('images/watercolor-bg.jpg') no-repeat center center / cover;
-  color: #2d2d2d;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
-}
-
 .container.my-5 {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
@@ -43,43 +36,44 @@ h1, h2, h3, .navbar-brand {
   padding: 1rem;
 }
 
+/* --- NAVIGATION --- */
 .navbar {
-  padding: 0 20px;
-  z-index: 10;
-  background-color: #fff6ec;
+  padding: 0.5rem 1.25rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
 }
+
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
-  color: #5a4e3c;
+  color: #FF6F61;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.innerBox, .middleBox, .outerBox {
-  background-color: #fff4dc;
-}
-.middleBox {
-  border: none !important;
-  box-shadow: none !important;
-}
-.custom-box {
-  border: 2px solid #ddd;
-  border-radius: 12px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.custom-box h2 {
-  margin-top: 20px;
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: #fff1f0;
+  color: #e85a4f;
+  border-radius: 8px;
+  padding: 0.3rem 0.75rem;
 }
 
-h1 {
-  font-size: 3rem;
-  color: #3a3228;
-}
-p.lead {
-  font-size: 1.25rem;
+.navbar-brand img {
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Active nav item styling */
+.navbar-nav .nav-item .nav-link.active {
+  background-color: #fff1c1;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* --- BUTTONS --- */
 .btn-lg {
   margin-top: 10px;
 }
@@ -106,6 +100,25 @@ p.lead {
   color: white;
 }
 
+/* --- LAYOUT & BOXES --- */
+.innerBox, .middleBox, .outerBox {
+  background-color: #fff4dc;
+}
+.middleBox {
+  border: none !important;
+  box-shadow: none !important;
+}
+.custom-box {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.custom-box h2 {
+  margin-top: 20px;
+}
+
 .full-width-background {
   background-color: #fffbe8;
   width: 100%;
@@ -126,24 +139,23 @@ p.lead {
   background-color: #ffffffdd;
 }
 
-
-
-
-@media (max-width: 768px) {
-  .testimonial-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* Typography */
+h1 {
+  font-size: 3rem;
+  color: #3a3228;
 }
-@media (max-width: 480px) {
-  .testimonial-grid {
-    grid-template-columns: 1fr;
-  }
+h2.fw-bold {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #3a3228;
 }
-
-.text-center {
-  padding-bottom: 50px;
+p.lead {
+  font-size: 1.25rem;
 }
 
+/* Icons */
 .icon-container {
   display: flex;
   justify-content: center;
@@ -159,14 +171,10 @@ p.lead {
   color: #333;
 }
 
-h2.fw-bold {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  color: #3a3228;
+/* Layout helpers */
+.text-center {
+  padding-bottom: 50px;
 }
-
 .row {
   display: flex;
   justify-content: space-around;
@@ -182,40 +190,34 @@ h2.fw-bold {
   align-items: center;
 }
 
-.navbar-nav .nav-item .nav-link.active {
-  background-color: #fff1c1;
-  color: black;
-  font-weight: bold;
-  border-radius: 10px;
-}
-
+/* Accordion tweaks */
 #faqs .accordion-button i {
   font-size: 1.2rem;
   transition: transform 0.3s ease;
 }
-
 #faqs .accordion-button:not(.collapsed) i {
   transform: rotate(180deg);
 }
 
+/* Instagram float button */
 .instagram-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 999;
 }
-
 .instagram-float img {
-  width: 50px;  /* adjust size as needed */
+  width: 50px;
   height: auto;
-  border-radius: 25%;  /* optional: make it circular */
+  border-radius: 25%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
-
 .instagram-float img:hover {
   transform: scale(1.1);
 }
+
+/* Bottom nav */
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -230,7 +232,6 @@ h2.fw-bold {
   z-index: 1000;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
-
 .bottom-nav a {
   text-align: center;
   color: #FF6F61;
@@ -238,15 +239,23 @@ h2.fw-bold {
   text-decoration: none;
   flex: 1;
 }
-
 .bottom-nav a i {
   font-size: 1.4rem;
   display: block;
   margin-bottom: 2px;
 }
-
 .bottom-nav a:hover {
   background-color: #fff1f0;
 }
 
-
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
