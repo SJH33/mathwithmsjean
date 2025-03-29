@@ -10,11 +10,12 @@ body {
   color: #333;
 }
 
+/* Headings & Brand */
 h1, h2, h3, .navbar-brand {
   font-family: 'DM Serif Display', serif;
 }
 
-/* Watercolor feel */
+/* Watercolor Hero */
 .landingPage {
   background: url('images/watercolor-bg.jpg') no-repeat center center / cover;
   color: #2d2d2d;
@@ -36,10 +37,10 @@ h1, h2, h3, .navbar-brand {
   padding: 1rem;
 }
 
-/* --- NAVIGATION --- */
+/* --- TOP NAVBAR --- */
 .navbar {
   padding: 0.5rem 1.25rem;
-  background-color: #fff;
+  background-color: #fff !important;
   border-bottom: 1px solid #ccc;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   z-index: 1000;
@@ -47,7 +48,7 @@ h1, h2, h3, .navbar-brand {
 
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
-  color: #FF6F61;
+  color: #FF6F61 !important;
   font-weight: 500;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -55,7 +56,7 @@ h1, h2, h3, .navbar-brand {
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   background-color: #fff1f0;
-  color: #e85a4f;
+  color: #e85a4f !important;
   border-radius: 8px;
   padding: 0.3rem 0.75rem;
 }
@@ -63,17 +64,11 @@ h1, h2, h3, .navbar-brand {
 .navbar-brand img {
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 60px;
+  height: 60px;
 }
 
-/* Active nav item styling */
-.navbar-nav .nav-item .nav-link.active {
-  background-color: #fff1c1;
-  color: black;
-  font-weight: bold;
-  border-radius: 10px;
-}
-
-/* --- BUTTONS --- */
+/* Buttons */
 .btn-lg {
   margin-top: 10px;
 }
@@ -100,7 +95,7 @@ h1, h2, h3, .navbar-brand {
   color: white;
 }
 
-/* --- LAYOUT & BOXES --- */
+/* Content Boxes */
 .innerBox, .middleBox, .outerBox {
   background-color: #fff4dc;
 }
@@ -119,12 +114,14 @@ h1, h2, h3, .navbar-brand {
   margin-top: 20px;
 }
 
+/* Section Backgrounds */
 .full-width-background {
   background-color: #fffbe8;
   width: 100%;
   padding: 0;
 }
 
+/* Testimonials */
 .testimonial-grid {
   display: grid;
   gap: 50px;
@@ -190,7 +187,7 @@ p.lead {
   align-items: center;
 }
 
-/* Accordion tweaks */
+/* Accordion (FAQs) */
 #faqs .accordion-button i {
   font-size: 1.2rem;
   transition: transform 0.3s ease;
@@ -199,7 +196,7 @@ p.lead {
   transform: rotate(180deg);
 }
 
-/* Instagram float button */
+/* Floating Instagram Button */
 .instagram-float {
   position: fixed;
   bottom: 20px;
@@ -217,7 +214,7 @@ p.lead {
   transform: scale(1.1);
 }
 
-/* Bottom nav */
+/* Bottom Mobile Nav */
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -248,14 +245,24 @@ p.lead {
   background-color: #fff1f0;
 }
 
-/* Responsive */
+/* Responsive Tweaks */
 @media (max-width: 768px) {
   .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 480px) {
   .testimonial-grid {
     grid-template-columns: 1fr;
+  }
+
+  body {
+    padding-bottom: 70px; /* prevent content being hidden behind bottom nav */
+  }
+
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
   }
 }
