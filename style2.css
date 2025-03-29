@@ -193,3 +193,22 @@ h2.fw-bold {
 #faqs .accordion-button:not(.collapsed) i {
   transform: rotate(180deg);
 }
+
+.instagram-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.instagram-float img {
+  width: 50px;  /* adjust size as needed */
+  height: auto;
+  border-radius: 50%;  /* optional: make it circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.instagram-float img:hover {
+  transform: scale(1.1);
+}
