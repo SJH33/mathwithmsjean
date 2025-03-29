@@ -126,11 +126,6 @@ p.lead {
   background-color: #ffffffdd;
 }
 
-@media (max-width: 767.98px) {
-  .navbar .navbar-collapse {
-    display: none !important;
-  }
-}
 
 
 
@@ -254,9 +249,4 @@ h2.fw-bold {
   background-color: #fff1f0;
 }
 
-/* Hide top navbar on mobile */
-@media (max-width: 767.98px) {
-  .navbar {
-    display: none;
-  }
-}
+
