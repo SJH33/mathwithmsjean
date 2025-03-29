@@ -197,9 +197,13 @@ p.lead {
 }
 
 /* Floating Instagram Button */
+
+
+
+
 .instagram-float {
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
   z-index: 999;
 }
