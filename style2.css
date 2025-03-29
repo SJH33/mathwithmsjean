@@ -266,3 +266,7 @@ p.lead {
     height: 50px;
   }
 }
+
+.custom-footer {
+  background-color: #F6E7D7 !important;
+}
