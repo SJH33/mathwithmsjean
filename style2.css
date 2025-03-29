@@ -6,8 +6,8 @@ html {
 body {
   padding-top: 80px;
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(to bottom, #fdf6e3, #fefaf6);
-  color: #333;
+  background: linear-gradient(to bottom, #FFF1E6, #FFF8F4);
+  color: #5B4A42;
 }
 
 /* Headings & Brand */
@@ -17,9 +17,9 @@ h1, h2, h3, .navbar-brand {
 
 /* Watercolor Hero */
 .landingPage {
-  background: url('images/watercolor-bg.jpg') no-repeat center center / cover;
-  color: #2d2d2d;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  background: url('images/watercolor-peach.jpg') no-repeat center center / cover;
+  color: #5B4A42;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
 }
 
 .section {
@@ -31,7 +31,7 @@ h1, h2, h3, .navbar-brand {
 }
 
 .container.my-5 {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 248, 240, 0.8);
   border-radius: 10px;
   margin-top: 0;
   padding: 1rem;
@@ -40,23 +40,23 @@ h1, h2, h3, .navbar-brand {
 /* --- TOP NAVBAR --- */
 .navbar {
   padding: 0.5rem 1.25rem;
-  background-color: #fff !important;
-  border-bottom: 1px solid #ccc;
+  background-color: #FFF1E6 !important;
+  border-bottom: 1px solid #e0bfa4;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   z-index: 1000;
 }
 
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
-  color: #FF6F61 !important;
+  color: #E9866C !important;
   font-weight: 500;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  background-color: #fff1f0;
-  color: #e85a4f !important;
+  background-color: #FCE2D8;
+  color: #D6715D !important;
   border-radius: 8px;
   padding: 0.3rem 0.75rem;
 }
@@ -73,41 +73,41 @@ h1, h2, h3, .navbar-brand {
   margin-top: 10px;
 }
 .btn-custom-red {
-  background-color: #ff6f61;
+  background-color: #E9866C;
   color: white;
   border: none;
   border-radius: 25px;
   padding: 10px 20px;
 }
 .btn-custom-red:hover {
-  background-color: #e85a4f;
+  background-color: #D6715D;
 }
 .btn-outline-red {
   background-color: transparent;
-  color: #ff6f61;
-  border: 2px solid #ff6f61;
+  color: #E9866C;
+  border: 2px solid #E9866C;
   border-radius: 25px;
   padding: 10px 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .btn-outline-red:hover {
-  background-color: #ff6f61;
+  background-color: #E9866C;
   color: white;
 }
 
 /* Content Boxes */
 .innerBox, .middleBox, .outerBox {
-  background-color: #fff4dc;
+  background-color: #FFF1E6;
 }
 .middleBox {
   border: none !important;
   box-shadow: none !important;
 }
 .custom-box {
-  border: 2px solid #ddd;
+  border: 2px solid #e0bfa4;
   border-radius: 12px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #fffaf7;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .custom-box h2 {
@@ -116,7 +116,7 @@ h1, h2, h3, .navbar-brand {
 
 /* Section Backgrounds */
 .full-width-background {
-  background-color: #fffbe8;
+  background-color: #FFEFE2;
   width: 100%;
   padding: 0;
 }
@@ -130,23 +130,23 @@ h1, h2, h3, .navbar-brand {
 }
 .testimonial-card {
   padding: 20px;
-  border: 1px solid #eee;
+  border: 1px solid #f5cfc1;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  background-color: #ffffffdd;
+  background-color: #fffaf7;
 }
 
 /* Typography */
 h1 {
   font-size: 3rem;
-  color: #3a3228;
+  color: #5B4A42;
 }
 h2.fw-bold {
   font-size: 3rem;
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 15px;
-  color: #3a3228;
+  color: #5B4A42;
 }
 p.lead {
   font-size: 1.25rem;
@@ -159,13 +159,13 @@ p.lead {
   align-items: center;
   width: 60px;
   height: 60px;
-  background-color: #f9f3e7;
+  background-color: #FFE9DC;
   border-radius: 50%;
   margin-bottom: 5px;
 }
 .icon-container .icon {
   font-size: 24px;
-  color: #333;
+  color: #5B4A42;
 }
 
 /* Layout helpers */
@@ -197,10 +197,6 @@ p.lead {
 }
 
 /* Floating Instagram Button */
-
-
-
-
 .instagram-float {
   position: fixed;
   bottom: 100px;
@@ -225,8 +221,8 @@ p.lead {
   left: 0;
   right: 0;
   height: 60px;
-  background-color: #fff;
-  border-top: 1px solid #ccc;
+  background-color: #FFF1E6;
+  border-top: 1px solid #e0bfa4;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -235,7 +231,7 @@ p.lead {
 }
 .bottom-nav a {
   text-align: center;
-  color: #FF6F61;
+  color: #E9866C;
   font-size: 0.75rem;
   text-decoration: none;
   flex: 1;
@@ -246,7 +242,7 @@ p.lead {
   margin-bottom: 2px;
 }
 .bottom-nav a:hover {
-  background-color: #fff1f0;
+  background-color: #FCE2D8;
 }
 
 /* Responsive Tweaks */
@@ -271,13 +267,7 @@ p.lead {
   }
 }
 
+/* Footer */
 .custom-footer {
-  background-color: #F6E7D7 !important;
-}
-
-
-.landingPage {
-  background: url('images/watercolor-peach.jpg') no-repeat center center / cover;
-  color: #5B4A42;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+  background-color: #FCE7DB !important;
 }
