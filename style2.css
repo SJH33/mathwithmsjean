@@ -49,11 +49,10 @@ h1, h2, h3, .navbar-brand {
 }
 
 
-
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-brand {
+.navbar-light .navbar-nav .nav-link {
   color: #E9866C !important;
   font-weight: 500;
+  padding: 0.3rem 0.75rem; /* 💡 Set padding consistently */
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -62,7 +61,26 @@ h1, h2, h3, .navbar-brand {
   background-color: #FCE2D8;
   color: #D6715D !important;
   border-radius: 8px;
-  padding: 0.3rem 0.75rem;
+  /* Don't change padding here */
+}
+
+
+
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+   color: #E9866C !important;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem; /* 💡 Set padding consistently */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: #FCE2D8;
+  color: #D6715D !important;
+  border-radius: 8px;
+  /* Don't change padding here */
 }
 
 
