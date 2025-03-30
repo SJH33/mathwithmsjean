@@ -450,3 +450,20 @@ p.lead {
   background-color: #FFF6F2;
 }
 
+.footer-icon {
+  font-size: 28px;          /* larger than the current 24px */
+  color: #E9866C;           /* theme color */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-icon:hover {
+  color: #D6715D;           /* darker coral on hover */
+  transform: scale(1.15);   /* slight zoom on hover */
+}
+
+.footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;       /* spacing between icons */
+}
