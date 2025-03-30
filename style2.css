@@ -397,3 +397,21 @@ p.lead {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
+
+.card-custom {
+  border: 1px solid #f5cfc1;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  background-color: #fffaf7;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+}
+
+.icon-style {
+  color: #E9866C;
+  margin-bottom: 15px;
+}
