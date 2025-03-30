@@ -319,7 +319,7 @@ p.lead {
 }
 
 .contact-card {
-  background-color: #fffaf7;
+  background-color: #FFEFE2; /* a soft peachy contrast */
   border: 2px solid #f5cfc1;
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
@@ -329,3 +329,4 @@ p.lead {
   transform: translateY(-4px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
