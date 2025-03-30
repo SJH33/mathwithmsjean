@@ -48,6 +48,8 @@ h1, h2, h3, .navbar-brand {
   z-index: 1000;
 }
 
+
+
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
   color: #E9866C !important;
@@ -69,6 +71,7 @@ h1, h2, h3, .navbar-brand {
   font-weight: 700;
   color: #D6715D !important;
   text-decoration: none;
+  margin-left: 1rem; /* You can increase this if you want more space */
 }
 
 
