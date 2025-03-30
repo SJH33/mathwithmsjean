@@ -72,6 +72,27 @@ h1, h2, h3, .navbar-brand {
 }
 
 
+
+
+.navbar-shrink {
+  padding: 0.25rem 1rem !important;
+}
+
+.navbar-shrink .navbar-brand {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-shrink {
+    padding: 0.25rem 1rem !important;
+  }
+
+  .navbar-shrink .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
+
+
 /* Buttons */
 .btn-lg {
   margin-top: 10px;
