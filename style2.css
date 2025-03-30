@@ -335,12 +335,12 @@ p.lead {
 
 .email-float {
   position: fixed;
-  bottom: 160px; /* slightly above the Instagram icon */
+  bottom: 170px; /* a bit higher above Instagram */
   right: 20px;
-  z-index: 999;
+  z-index: 1001; /* make sure it's above everything */
 }
 .email-float img {
-  width: 50px;
+  width: 55px;
   height: auto;
   border-radius: 25%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
