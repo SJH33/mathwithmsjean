@@ -430,3 +430,14 @@ p.lead {
   flex: 1 1 300px; /* grow, shrink, base width */
   max-width: 320px;
 }
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #FCE7DB;
+  border-top: 1px solid #e0bfa4;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
