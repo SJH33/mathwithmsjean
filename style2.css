@@ -65,6 +65,11 @@ h1, h2, h3, .navbar-brand {
 }
 
 
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: #FCE2D8;
+  outline: 1px dashed #ccc; /* temporary debug */
+}
+
 
 
 .navbar-light .navbar-nav .nav-link,
