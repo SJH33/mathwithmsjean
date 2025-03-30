@@ -5,10 +5,13 @@ html {
 
 body {
   padding-top: 80px;
+  padding-bottom: 100px;
   font-family: 'Quicksand', sans-serif;
   background: linear-gradient(to bottom, #FFF1E6, #FFF8F4);
   color: #5B4A42;
 }
+
+
 
 /* Headings & Brand */
 h1, h2, h3, .navbar-brand {
