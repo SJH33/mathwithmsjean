@@ -12,7 +12,7 @@ body {
 
 /* Headings & Brand */
 h1, h2, h3, .navbar-brand {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Hero Section */
@@ -63,12 +63,11 @@ h1, h2, h3, .navbar-brand {
   padding: 0.3rem 0.75rem;
 }
 
-.navbar-brand img {
-  border-radius: 8px; /* subtle rounding, or use 0 for sharp corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 60px;
-  width: auto; /* allows natural width */
-  max-width: 180px; /* optional cap for responsiveness */
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #D6715D !important;
+  text-decoration: none;
 }
 
 /* Buttons */
@@ -264,9 +263,8 @@ p.lead {
     padding-bottom: 70px; /* prevent content being hidden behind bottom nav */
   }
 
-  .navbar-brand img {
-    width: 50px;
-    height: 50px;
+  .navbar-brand {
+    font-size: 1.4rem;
   }
 }
 
