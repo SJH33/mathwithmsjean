@@ -170,6 +170,14 @@ h1, h2, h3, .navbar-brand {
   padding: 0;
 }
 
+.profile-photo {
+  max-width: 250px;
+  border: 4px solid #FCE2D8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
 /* Testimonials */
 .testimonial-grid {
   display: grid;
@@ -289,6 +297,9 @@ p.lead {
   font-size: 1.4rem;
   display: block;
   margin-bottom: 2px;
+  padding-top: 8px;
+}
+
 }
 .bottom-nav a:hover {
   background-color: #FCE2D8;
@@ -370,4 +381,19 @@ p.lead {
 
 .email-float img:hover {
   transform: scale(1.1);
+}
+
+.accordion-button {
+  background-color: #FFF1E6;
+  color: #5B4A42;
+  font-weight: 500;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #FFE9DC;
+  color: #D6715D;
+}
+.accordion-item {
+  border: 1px solid #f5cfc1;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
