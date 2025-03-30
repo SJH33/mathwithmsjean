@@ -415,3 +415,18 @@ p.lead {
   color: #E9866C;
   margin-bottom: 15px;
 }
+
+/* Better spacing between card columns */
+.card-columns-custom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* horizontal and vertical spacing */
+  margin-top: 30px;
+}
+
+/* Adjust individual card width */
+.card-columns-custom .card-custom {
+  flex: 1 1 300px; /* grow, shrink, base width */
+  max-width: 320px;
+}
