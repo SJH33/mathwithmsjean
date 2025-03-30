@@ -63,12 +63,14 @@ h1, h2, h3, .navbar-brand {
   padding: 0.3rem 0.75rem;
 }
 
+
 .navbar-brand {
-  font-size: 3rem;
+  font-size: 2.25rem; /* or try 2rem if you'd like it even smaller */
   font-weight: 700;
   color: #D6715D !important;
   text-decoration: none;
 }
+
 
 /* Buttons */
 .btn-lg {
@@ -249,10 +251,32 @@ p.lead {
 
 /* Responsive Tweaks */
 @media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
   .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    padding: 0.25rem 0.5rem; /* match hover state with base */
+    border-radius: 6px;
+  }
+
+  .btn.btn-custom-red,
+  .btn.btn-outline-red {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 }
+
+
+
 
 @media (max-width: 480px) {
   .testimonial-grid {
