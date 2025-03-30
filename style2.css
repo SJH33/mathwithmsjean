@@ -467,3 +467,9 @@ p.lead {
   justify-content: center;
   margin-right: 16px;       /* spacing between icons */
 }
+
+footer p {
+  color: #E9866C; /* Adjust to your desired color */
+  font-size: 1.1rem; /* Adjust to your desired size */
+}
+
