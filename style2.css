@@ -233,7 +233,7 @@ p.lead {
 }
 .instagram-float img {
   width: 50px;
-  height: auto;
+  height: 50px;
   border-radius: 25%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
@@ -341,7 +341,7 @@ p.lead {
 }
 .email-float img {
   width: 50px;
-  height: auto;
+  height: 50px;
   border-radius: 25%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
