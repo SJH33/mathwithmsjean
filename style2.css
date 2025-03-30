@@ -333,3 +333,19 @@ p.lead {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.email-float {
+  position: fixed;
+  bottom: 160px; /* slightly above the Instagram icon */
+  right: 20px;
+  z-index: 999;
+}
+.email-float img {
+  width: 50px;
+  height: auto;
+  border-radius: 25%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+.email-float img:hover {
+  transform: scale(1.1);
+}
